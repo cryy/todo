@@ -46,6 +46,7 @@ export default function TaskCreator(props: TaskCreatorProps) {
     const [description, setDescription] = React.useState<string | undefined>(undefined);
     const [priority, setPriority] = React.useState<TaskPriority>(TaskPriority.Normal);
 
+    //set of rules in order to create a task
     const canCreate = name !== undefined && name.length > 0 && name.trim();
 
     const handleClose = () => {

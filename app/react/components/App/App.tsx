@@ -20,7 +20,9 @@ function Render(props: AppProps) {
 
     return (
         <div className={props.classes.container}>
+            {/* a fragment component that's listening for recoil updates and saving them into localStorage */}
             <RecoilListener />
+
             <RoutingContainer />
         </div>
     );
@@ -32,6 +34,7 @@ export default function App() {
     const classes = useStyle(light);
 
 
+    //create base styling and inject theme throughout the app
     return (
         <MuiThemeProvider theme={light} >
             <CssBaseline />

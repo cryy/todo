@@ -32,16 +32,19 @@ export default function TaskView() {
     const history = useHistory();
     const { id } = useParams();
 
+    //no proper id? redirect back to home
     if (!id)
         history.push("/");
 
     const numId = parseInt(id);
+    //redirect to home if id is not a valid number
     if (!(numId && isFinite(numId)))
         history.push("/");
 
     const [tasks, setTasks] = useRecoilState(tasksState);
     const taskIndex = tasks.findIndex(t => t.id === numId);
 
+    //if task is not found, redirect back to home
     if (taskIndex === -1)
         history.push("/");
 
@@ -50,6 +53,8 @@ export default function TaskView() {
     const classes = useStyle();
     const [open, setOpen] = React.useState<boolean>(true);
 
+
+    //we use setTimeout to let the exiting animation finish, then we delete the task if requested
 
     const handleDelete = () => {
         setOpen(false);

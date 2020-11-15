@@ -12,6 +12,7 @@ export default function RoutingContainer() {
             <AppToolbar />
             <Home />
 
+            {/* Modal route */}
             <Route path={"/:id"} children={<TaskView />} />
         </React.Fragment>
     );

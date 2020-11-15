@@ -30,6 +30,7 @@ export default function TaskCreation() {
 
     return (
         <React.Fragment>
+            {/* Creation provides the button, Creator provides the modal for actually creating a task */}
             <TaskCreator open={open} setOpen={setOpen} />
             <div className={classes.container}>
                 <Button

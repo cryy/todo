@@ -63,6 +63,7 @@ export default function TaskList() {
                 <Grid item xs={12}>
                     <Paper elevation={0} className={classes.paper}>
                         <div className={classes.itemContainer}>
+                            {/* loop through all tasks and create a component for them, we're passing classes we created here to prevent performance impact */}
                             {sorted.length > 0 ?
                                 (sorted.map(t => <TaskItem key={t.id} classes={classes} task={t} />))
                                 :

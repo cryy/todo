@@ -45,6 +45,7 @@ export default function TaskItem(props: TaskItemProps) {
                 <Grid item xs={4} className={classes.gridItemName}
                     onClick={handleTaskView}
                 >
+                    {/* if a task is done, cross it out */}
                     <Typography className={classes.taskName + (props.task.done ? ` ${classes.taskNameCompleted}` : "")}>
                         {props.task.name}
                     </Typography>

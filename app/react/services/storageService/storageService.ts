@@ -3,6 +3,7 @@ import TaskFilter from "../stateService/models/TaskFilter";
 
 let storeCache: Store | null = null;
 
+//loading from localStorage, if not found create default state
 export function load() {
   if (storeCache)
     return storeCache;
@@ -20,6 +21,7 @@ export function load() {
   return storeCache;
 }
 
+//save to localStorage
 export function save(store: Store) {
   storeCache = store;
   window.localStorage.setItem("store", JSON.stringify(store));
