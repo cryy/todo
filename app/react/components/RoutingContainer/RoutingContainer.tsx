@@ -12,7 +12,7 @@ export default function RoutingContainer() {
             <AppToolbar />
             <Home />
 
-            <Route path="/:id" children={<TaskView />} />
+            <Route path={process.env.PUBLIC_URL + "/:id"} children={<TaskView />} />
         </React.Fragment>
     );
 
