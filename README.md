@@ -2,7 +2,7 @@
 
 A simplistic to-do task React app. Uses [Material-UI](https://github.com/mui-org/material-ui) for UI components and [Recoil](https://github.com/facebookexperimental/Recoil) for state management.
 
-View the app at [GitHub Pages](https://cryy.github.com/todo)
+View the app at [GitHub Pages](https://cryy.github.io/todo)
 
 ## Building
 ```
