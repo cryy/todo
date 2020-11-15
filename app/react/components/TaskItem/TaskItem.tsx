@@ -25,7 +25,7 @@ export default function TaskItem(props: TaskItemProps) {
     };
 
     const handleTaskView = () => {
-        history.push(process.env.PUBLIC_URL + `/${props.task.id}`);
+        history.push(`/${props.task.id}`);
     }
 
     const classes = props.classes;

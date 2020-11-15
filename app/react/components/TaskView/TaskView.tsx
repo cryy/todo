@@ -33,17 +33,17 @@ export default function TaskView() {
     const { id } = useParams();
 
     if (!id)
-        history.push(process.env.PUBLIC_URL + "/");
+        history.push("/");
 
     const numId = parseInt(id);
     if (!(numId && isFinite(numId)))
-        history.push(process.env.PUBLIC_URL + "/");
+        history.push("/");
 
     const [tasks, setTasks] = useRecoilState(tasksState);
     const taskIndex = tasks.findIndex(t => t.id === numId);
 
     if (taskIndex === -1)
-        history.push(process.env.PUBLIC_URL + "/");
+        history.push("/");
 
     const task = tasks[taskIndex];
 
@@ -54,7 +54,7 @@ export default function TaskView() {
     const handleDelete = () => {
         setOpen(false);
         setTimeout(() => {
-            history.push(process.env.PUBLIC_URL + "/");
+            history.push("/");
             setTasks([...tasks.slice(0, taskIndex), ...tasks.slice(taskIndex + 1)]);
         }, 225);
     };
@@ -62,7 +62,7 @@ export default function TaskView() {
     const handleClose = () => {
         setOpen(false);
         setTimeout(() => {
-            history.push(process.env.PUBLIC_URL + "/");
+            history.push("/");
         }, 225);
     };
 
