@@ -10,3 +10,18 @@ npm run build
 ```
 You will need to adjust URLs if you want to deploy the app.
 
+
+## Folder structure
+```bash
+├───app # Base app, includes index.html template
+│   └───react
+│       ├───components # Component folders with respective props
+│       └───services
+│           ├───stateService # Recoil state management
+│           │   └───models
+│           └───storageService # localStorage management
+│               └───models
+├───media #README media
+└───node_modules
+
+```
