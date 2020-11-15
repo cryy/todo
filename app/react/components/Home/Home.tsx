@@ -48,12 +48,12 @@ export default function Home() {
                     </Typography>
                 </Grid>
                 <Grid item xs={false} md={9} />
-                <Grid item xs={1} md={2} />
-                <Grid item xs={10} md={8}>
+                <Grid item xs={1} md={3} />
+                <Grid item xs={10} md={6}>
                     {/* split options into its own component to prevent performance impact with rendering */}
                     <TaskShowOptions />
                 </Grid>
-                <Grid item xs={1} md={2} />
+                <Grid item xs={1} md={3} />
                 <Grid item xs={1} md={3} />
                 <Grid item xs={10} md={6}>
                     <TaskList />

@@ -37,8 +37,15 @@ export const light = createMuiTheme({
             tooltip: {
                 fontSize: "13px"
             }
+        },
+        MuiDialogTitle: {
+            root: {
+                '& > .MuiTypography-root': {
+                    fontWeight: 600
+                }
+            }
         }
     }
-    
+
 });
 

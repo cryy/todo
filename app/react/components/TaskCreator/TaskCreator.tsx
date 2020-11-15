@@ -99,8 +99,8 @@ export default function TaskCreator(props: TaskCreatorProps) {
             <DialogContent>
                 <div className={classes.section}>
                     <Typography className={classes.label}>
-                        Task name
-                        </Typography>
+                        Task name *
+                    </Typography>
                     <Grid container spacing={0}>
                         <Grid item xs={1} />
                         <Grid item xs={10} >
@@ -118,8 +118,8 @@ export default function TaskCreator(props: TaskCreatorProps) {
 
                 <div className={classes.section}>
                     <Typography className={classes.label}>
-                        (Optional) Task Description
-                        </Typography>
+                        Task Description
+                    </Typography>
                     <Grid container spacing={0}>
                         <Grid item xs={1} />
                         <Grid item xs={10} >
@@ -139,8 +139,8 @@ export default function TaskCreator(props: TaskCreatorProps) {
 
                 <div className={classes.section}>
                     <Typography className={classes.label}>
-                        Task Priority
-                        </Typography>
+                        Task Priority *
+                    </Typography>
                     <Grid container spacing={0}>
                         <Grid item xs={1} />
                         <Grid item xs={10} >

@@ -36,15 +36,6 @@ const useStyle = makeStyles<any, any>(() =>
         },
         paper: {
             marginBottom: "120px"
-        },
-        highPriority: {
-            color: "rgba(234, 23, 23, 0.64)"
-        },
-        normalPriority: {
-            color: "rgba(42, 181, 51, 0.64)"
-        },
-        lowPriority: {
-            color: "rgba(94, 94, 94, 0.44)"
         }
     })
 );

@@ -54,7 +54,7 @@ export default function TaskItem(props: TaskItemProps) {
                     <Tooltip
                         title={`${getPriorityString(props.task.priority)} Priority`}
                     >
-                        <WarningRoundedIcon className={getPriorityStyling(classes, props.task.priority)} />
+                        <WarningRoundedIcon style={{ color: getPriorityStyling(props.task.priority) }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2} className={classes.gridItem}>
@@ -80,14 +80,14 @@ export function getPriorityString(priority: TaskPriority) {
 }
 
 
-function getPriorityStyling(classes: Record<any, string>, priority: TaskPriority) {
+export function getPriorityStyling(priority: TaskPriority) {
     switch (priority) {
         case TaskPriority.High:
-            return classes.highPriority;
+            return "rgba(234, 23, 23, 0.64)";
         case TaskPriority.Normal:
-            return classes.normalPriority;
+            return "rgba(42, 181, 51, 0.64)";
         default:
-            return classes.lowPriority;
+            return "rgba(94, 94, 94, 0.44)";
     }
 }
 

@@ -5,10 +5,10 @@ import App from './components/App/App';
 import { BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 
-// Entry point to the app, basename is set todo as a hotfix for routing on GitHub Pages
+// Entry point to the app
 ReactDOM.render(
     <RecoilRoot>
-        <BrowserRouter basename="/todo">
+        <BrowserRouter>
             <App />
         </BrowserRouter>
     </RecoilRoot>
